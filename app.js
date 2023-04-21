@@ -30,9 +30,11 @@ let posts = [];
 
 app.get("/", function(req, res) {
 
-  res.render("home", {startingContent: homeStartingContent});
+  res.render("home", {
+    startingContent: homeStartingContent,
+    posts: posts
+  });
 
-  console.log( posts )
 
 });
 

@@ -4,4 +4,16 @@
 
 <p><%= startingContent %></p>
 
+<% posts.forEach(function(post) { %>
+    <div>
+        <p><%= post.title %></p>
+        <% console.log(post.title); %> 
+    </div>
+    <% }); %>
+
+
+
+
+
 <%- include("partials/footer"); %>
+
