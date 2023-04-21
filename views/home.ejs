@@ -5,14 +5,11 @@
 <p><%= startingContent %></p>
 
 <% posts.forEach(function(post) { %>
-    <div>
-        <p><%= post.title %></p>
-        <% console.log(post.title); %> 
-    </div>
+
+    <h1><%= post.title %></h1>
+    <p><%= post.content.substring(0,100) + "..." %></p>
+
     <% }); %>
-
-
-
 
 
 <%- include("partials/footer"); %>
